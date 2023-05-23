@@ -535,8 +535,8 @@ body .header {
           text-align: center;
           width: 90%;
           margin: 10px auto 0;
-          padding: 10px 0px;
-          font-size: 16px;
+          padding: 12px;
+          font-size: 22px;
           text-transform: uppercase; } }
   body .header__links-mob {
     display: none; }
