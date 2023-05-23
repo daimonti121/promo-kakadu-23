@@ -1,0 +1,72 @@
+@import 'media'
+@import 'fonts'
+@import 'anim'
+
+.dropbtn
+    background: rgba(0, 0, 0, 0.5)
+    border: 2px solid #E0DFDF
+    border-radius: 10px
+    width: 76px
+    height: 37px
+    font-family: 'Proxima Nova'
+    font-style: normal
+    font-weight: 700
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    text-transform: uppercase
+    color: #E0DFDF
+    border-bottom-right-radius: 5px
+    border-bottom-left-radius: 5px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    img 
+        margin-left: 5px
+
+
+.dropdown
+    position: relative
+    .dropdown-content
+        display: none
+        position: absolute
+        background: rgba(0, 0, 0, 0.5)
+        border: 2px solid #E0DFDF
+        border-radius: 10px
+        width: 76px
+        z-index: 1
+
+    .dropdown-content a
+        color: black
+        justify-content: space-between
+        display: flex
+        padding: 14px 7px
+        text-decoration: none
+        font-family: 'Proxima Nova'
+        font-style: normal
+        font-weight: 700
+        font-size: 9px
+        line-height: 17px
+        text-align: center
+        color: #E0DFDF
+        cursor: pointer
+        text-transform: uppercase
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+
+    .dropdown-content a:hover .dropbtn   
+        border-bottom-right-radius: 5px
+        border-bottom-left-radius: 5px
+
+    .dropdown:hover &-content
+        display: block
+        position: absolute
+        top: 35px
+        border-top-right-radius: 5px
+        border-top-left-radius: 5px
+        
+
+

@@ -1,0 +1,748 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "RocknRoll One";
+  src: url("../fonts/RocknRollOne-Regular.woff");
+  font-weight: 400; }
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/robotocondensed-regular.woff");
+  font-weight: 400; }
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/robotocondensed-bold.woff");
+  font-weight: 700; }
+.arrowAnim {
+  width: 0px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .arrowAnim {
+      display: none; } }
+
+.arrow {
+  width: 25px;
+  height: 32px;
+  background: url("../img/heard.png") 100%/cover no-repeat; }
+  @media (max-width: 979px) {
+    .arrow {
+      width: 15px;
+      height: 22px; } }
+  @media (max-width: 768px) {
+    .arrow {
+      display: none; } }
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite;
+  animation: slide 4s linear infinite; }
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.delay2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+.delay3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-5vw); }
+  20% {
+    opacity: 1;
+    transform: translateX(-3vw); }
+  80% {
+    opacity: 1;
+    transform: translateX(3vw); }
+  100% {
+    opacity: 0;
+    transform: translateX(5vw); } }
+.heart {
+  animation-name: anime;
+  /* имя кейфрейма для анимации */
+  animation-duration: 700ms;
+  /* длительность анимации */
+  animation-iteration-count: infinite;
+  /* количество повторений, в данном случае - бесконечно */
+  animation-direction: alternate;
+  /* проигрывать анимацию в прямом и в обратном порядке */
+  animation-timing-function: ease-in; }
+
+@keyframes anime {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.1); } }
+@font-face {
+  font-family: "RocknRoll One";
+  src: url("../fonts/RocknRollOne-Regular.woff");
+  font-weight: 400; }
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/robotocondensed-regular.woff");
+  font-weight: 400; }
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/robotocondensed-bold.woff");
+  font-weight: 700; }
+.arrowAnim {
+  width: 0px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .arrowAnim {
+      display: none; } }
+
+.arrow {
+  width: 25px;
+  height: 32px;
+  background: url("../img/heard.png") 100%/cover no-repeat; }
+  @media (max-width: 979px) {
+    .arrow {
+      width: 15px;
+      height: 22px; } }
+  @media (max-width: 768px) {
+    .arrow {
+      display: none; } }
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite;
+  animation: slide 4s linear infinite; }
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.delay2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+.delay3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-5vw); }
+  20% {
+    opacity: 1;
+    transform: translateX(-3vw); }
+  80% {
+    opacity: 1;
+    transform: translateX(3vw); }
+  100% {
+    opacity: 0;
+    transform: translateX(5vw); } }
+.heart {
+  animation-name: anime;
+  /* имя кейфрейма для анимации */
+  animation-duration: 700ms;
+  /* длительность анимации */
+  animation-iteration-count: infinite;
+  /* количество повторений, в данном случае - бесконечно */
+  animation-direction: alternate;
+  /* проигрывать анимацию в прямом и в обратном порядке */
+  animation-timing-function: ease-in; }
+
+@keyframes anime {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.1); } }
+.dropbtn {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #E0DFDF;
+  border-radius: 10px;
+  width: 76px;
+  height: 37px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E0DFDF;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .dropbtn img {
+    margin-left: 5px; }
+
+.dropdown {
+  position: relative; }
+  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #E0DFDF;
+    border-radius: 10px;
+    width: 76px;
+    z-index: 1; }
+  .dropdown .dropdown-content a {
+    color: black;
+    justify-content: space-between;
+    display: flex;
+    padding: 14px 7px;
+    text-decoration: none;
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 17px;
+    text-align: center;
+    color: #E0DFDF;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .dropdown .dropdown-content a:hover .dropbtn {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 35px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+
+@font-face {
+  font-family: "RocknRoll One";
+  src: url("../fonts/RocknRollOne-Regular.woff");
+  font-weight: 400; }
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/robotocondensed-regular.woff");
+  font-weight: 400; }
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/robotocondensed-bold.woff");
+  font-weight: 700; }
+.arrowAnim {
+  width: 0px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .arrowAnim {
+      display: none; } }
+
+.arrow {
+  width: 25px;
+  height: 32px;
+  background: url("../img/heard.png") 100%/cover no-repeat; }
+  @media (max-width: 979px) {
+    .arrow {
+      width: 15px;
+      height: 22px; } }
+  @media (max-width: 768px) {
+    .arrow {
+      display: none; } }
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite;
+  animation: slide 4s linear infinite; }
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.delay2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+.delay3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-5vw); }
+  20% {
+    opacity: 1;
+    transform: translateX(-3vw); }
+  80% {
+    opacity: 1;
+    transform: translateX(3vw); }
+  100% {
+    opacity: 0;
+    transform: translateX(5vw); } }
+.heart {
+  animation-name: anime;
+  /* имя кейфрейма для анимации */
+  animation-duration: 700ms;
+  /* длительность анимации */
+  animation-iteration-count: infinite;
+  /* количество повторений, в данном случае - бесконечно */
+  animation-direction: alternate;
+  /* проигрывать анимацию в прямом и в обратном порядке */
+  animation-timing-function: ease-in; }
+
+@keyframes anime {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.1); } }
+.timer__items {
+  display: flex;
+  font-size: 48px;
+  margin-top: 35px; }
+  @media (max-width: 979px) {
+    .timer__items {
+      margin-top: 20px; } }
+  @media (max-width: 768px) {
+    .timer__items {
+      justify-content: center;
+      margin-top: 420px; } }
+
+.timer__item {
+  position: relative;
+  min-width: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-bottom: 15px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 13.179px;
+  font-family: "RocknRoll One";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #F8CA00;
+  text-shadow: 0px 2.84732px 0px #7A4558;
+  padding: 34px 15px 19px; }
+  @media (max-width: 768px) {
+    .timer__item {
+      min-width: 100px; } }
+  .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 54px;
+    transform: translateX(-50%);
+    font-family: "RocknRoll One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 0px 1.12163px 0px #7A4558;
+    color: #fff; }
+    @media (max-width: 768px) {
+      .timer__item::before {
+        font-size: 12px; } }
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+html, .body {
+  height: 100%;
+  min-width: 320px;
+  background-color: #071947; }
+
+.body {
+  font-family: "RocknRoll One", "Roboto Condensed", sans-serif; }
+
+.wrapper {
+  min-height: 0%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+.main {
+  flex: 1 1 auto;
+  overflow: hidden; }
+
+[class*="__container"] {
+  max-width: 1054px;
+  margin: 0 auto; }
+  @media (max-width: 1170px) {
+    [class*="__container"] {
+      margin: 0 40px; } }
+
+body::-webkit-scrollbar {
+  width: 7px; }
+
+body::-webkit-scrollbar-track {
+  background: #000; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F9B700;
+  border-radius: 15px;
+  border: 2px solid #000; }
+
+body .header {
+  padding-top: 66px;
+  background: url("../img/back.png") 100% 100%/cover no-repeat;
+  height: 750px; }
+  @media (max-width: 979px) {
+    body .header {
+      background: url("../img/back.png") 60% 100%/cover no-repeat;
+      height: 550px;
+      padding-top: 46px; } }
+  @media (max-width: 768px) {
+    body .header {
+      height: 835px;
+      background: url("../img/back_mob.png") 100% 100%/cover no-repeat;
+      padding-top: 10px; } }
+  body .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  @media (max-width: 768px) {
+    body .header__logo {
+      margin: 0 auto;
+      margin-top: 40px; } }
+  @media (max-width: 768px) {
+    body .header__logo img {
+      width: 100%; } }
+  body .header__local {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #E0DFDF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none; }
+    body .header__local p {
+      font-family: "RocknRoll One";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #E0DFDF;
+      margin-right: 10px; }
+  body .header__info {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    max-width: 540px; }
+    @media (max-width: 979px) {
+      body .header__info {
+        margin-top: 30px; } }
+    @media (max-width: 768px) {
+      body .header__info {
+        margin-top: 20px; } }
+    body .header__info h2 {
+      font-family: "RocknRoll One";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 120%;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 5px;
+      text-shadow: 0px 3.84732px 0px #7A4558; }
+      @media (max-width: 979px) {
+        body .header__info h2 {
+          font-size: 26px; } }
+      @media (max-width: 768px) {
+        body .header__info h2 {
+          font-size: 24px;
+          text-align: center;
+          display: none; } }
+      body .header__info h2 span {
+        color: #F8CA00; }
+    body .header__info .mobil-text {
+      display: none; }
+      @media (max-width: 768px) {
+        body .header__info .mobil-text {
+          display: block; } }
+    body .header__info h4 {
+      font-family: "RocknRoll One";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 136px;
+      text-transform: uppercase;
+      color: #F8CA00;
+      text-shadow: 0px 5.84732px 0px #7A4558; }
+      @media (max-width: 979px) {
+        body .header__info h4 {
+          font-size: 80px;
+          max-width: 320px;
+          margin-top: 20px; } }
+      @media (max-width: 768px) {
+        body .header__info h4 {
+          margin: 0px auto;
+          padding: 0; } }
+    body .header__info h3 {
+      font-family: "RocknRoll One";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-top: 28px; }
+      @media (max-width: 979px) {
+        body .header__info h3 {
+          font-size: 26px; } }
+      @media (max-width: 768px) {
+        body .header__info h3 {
+          margin-top: 25px;
+          text-align: center;
+          font-size: 22px; } }
+    body .header__info a {
+      margin-top: 20px;
+      background: #F8CA00;
+      border-radius: 126px;
+      font-family: "RocknRoll One";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 30px;
+      color: #B16000;
+      display: block;
+      text-decoration: none;
+      max-width: 390px;
+      padding: 26px;
+      text-align: center;
+      transition: 0.3s;
+      text-transform: uppercase; }
+      body .header__info a:hover {
+        box-shadow: 0px 0px 65.6651px rgba(250, 154, 1, 0.7); }
+      @media (max-width: 979px) {
+        body .header__info a {
+          max-width: 310px;
+          font-size: 26px;
+          padding: 16px; } }
+      @media (max-width: 768px) {
+        body .header__info a {
+          text-align: center;
+          width: 90%;
+          margin: 10px auto 0;
+          padding: 10px 0px;
+          font-size: 16px;
+          text-transform: uppercase; } }
+  body .header__links-mob {
+    display: none; }
+    @media (max-width: 768px) {
+      body .header__links-mob {
+        display: block; } }
+  @media (max-width: 768px) {
+    body .header__links-mob a {
+      margin-top: 10px;
+      border: none;
+      background: none;
+      box-shadow: none; } }
+@media (max-width: 768px) {
+  body .main {
+    margin-top: 30px; } }
+@media (max-width: 979px) {
+  body .main .proposition {
+    margin-top: 0; } }
+body .main .proposition__images {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 184px;
+  background: url("../img/main-image.png") 100% 0%/cover no-repeat;
+  border-radius: 24px;
+  margin-top: 70px; }
+  @media (max-width: 768px) {
+    body .main .proposition__images {
+      display: flex;
+      flex-direction: column;
+      height: 554px;
+      max-width: 270px;
+      width: 100%;
+      background: url("../img/main-image-mob.png") 0%/cover no-repeat;
+      margin: 70px auto 0px; } }
+body .main .proposition__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px; }
+  @media (max-width: 979px) {
+    body .main .proposition__img {
+      width: 200px; } }
+  body .main .proposition__img p {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.0131502px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 250px;
+    position: relative;
+    text-decoration: none; }
+    @media (max-width: 979px) {
+      body .main .proposition__img p {
+        font-size: 20px; } }
+  body .main .proposition__img .second, body .main .proposition__img .first {
+    top: 20px; }
+body .main .proposition__links {
+  margin-top: 52px; }
+body .main .proposition__link {
+  background: linear-gradient(93.7deg, #F9B700 0%, #FC8702 100%);
+  border-radius: 126.474px;
+  font-family: "RocknRoll One";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 20px 0px;
+  display: block;
+  margin: 0 auto;
+  max-width: 330px;
+  text-align: center;
+  transition: 0.3s;
+  text-transform: uppercase; }
+  body .main .proposition__link:hover {
+    box-shadow: 0px 0px 65.6651px rgba(250, 154, 1, 0.7); }
+body .main .proposition__items {
+  display: flex;
+  align-items: center;
+  margin: 0 45px; }
+  @media (max-width: 768px) {
+    body .main .proposition__items {
+      margin: 40px 0px 0px; } }
+  body .main .proposition__items h2 {
+    font-family: "RocknRoll One";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 67px;
+    color: #F8CA00;
+    text-shadow: 0px 3.3908px 0px #7A4558; }
+  body .main .proposition__items p {
+    font-family: "RocknRoll One";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 0px 1.20088px 0px #7A4558;
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 8px;
+    text-transform: uppercase; }
+body .main .proposition__services {
+  margin-top: 90px; }
+  @media (max-width: 768px) {
+    body .main .proposition__services {
+      margin-top: 50px; } }
+body .main .proposition__services-items {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap; }
+  body .main .proposition__services-items .items {
+    display: block;
+    margin: 0 10px;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.3s;
+    cursor: pointer; }
+    @media (max-width: 768px) {
+      body .main .proposition__services-items .items {
+        margin: 0 8px;
+        margin-top: 16px; } }
+    body .main .proposition__services-items .items:hover {
+      color: #F8CA00; }
+body .main .proposition .row-two {
+  margin-top: 20px; }
+  @media (max-width: 768px) {
+    body .main .proposition .row-two {
+      margin: 0px; } }
+body .main .footer {
+  margin-top: 35px;
+  margin-bottom: 35px; }
+  @media (max-width: 979px) {
+    body .main .footer {
+      margin-top: 50px; } }
+  @media (max-width: 768px) {
+    body .main .footer {
+      margin-top: 30px; } }
+  body .main .footer__line {
+    border: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    text-align: center;
+    display: block;
+    margin: 25px auto; }
+    @media (max-width: 768px) {
+      body .main .footer__line {
+        margin: 35px 0px; } }
+  body .main .footer__partners img {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: block; }
+  @media (max-width: 768px) {
+    body .main .footer .decs {
+      display: none; } }
+  body .main .footer .mob {
+    display: none; }
+    @media (max-width: 768px) {
+      body .main .footer .mob {
+        display: block; } }
+  body .main .footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px; }
+    @media (max-width: 768px) {
+      body .main .footer__info {
+        flex-direction: column; } }
+  body .main .footer__logo {
+    margin-right: 15px; }
+    @media (max-width: 768px) {
+      body .main .footer__logo .dec {
+        margin-right: 0px;
+        display: none; } }
+    @media (max-width: 768px) {
+      body .main .footer__logo .mob {
+        margin: 30px auto 0px;
+        display: block; } }
+  body .main .footer .logo-two {
+    margin-left: 60px; }
+    @media (max-width: 768px) {
+      body .main .footer .logo-two {
+        margin-right: 0px;
+        margin-left: 0px; } }
+  body .main .footer__text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.47); }
+    @media (max-width: 768px) {
+      body .main .footer__text {
+        margin-top: 20px;
+        text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
