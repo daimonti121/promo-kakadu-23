@@ -300,54 +300,75 @@
     transform: scale(1); }
   100% {
     transform: scale(1.1); } }
+.timer {
+  position: absolute;
+  right: 0px;
+  top: -83px; }
+  @media (max-width: 979px) {
+    .timer {
+      right: auto;
+      left: 0px;
+      top: 311px; } }
+  @media (max-width: 768px) {
+    .timer {
+      position: relative;
+      left: 0px;
+      top: 0px; } }
+
 .timer__items {
   display: flex;
   font-size: 48px;
-  margin-top: 35px; }
-  @media (max-width: 979px) {
-    .timer__items {
-      margin-top: 20px; } }
+  background: rgba(7, 25, 71, 0.7);
+  border-radius: 12px; }
   @media (max-width: 768px) {
     .timer__items {
-      justify-content: center;
-      margin-top: 420px; } }
+      justify-content: space-around;
+      margin-top: 32px; } }
 
 .timer__item {
   position: relative;
-  min-width: 100px;
-  margin-left: 5px;
-  margin-right: 5px;
+  min-width: 93px;
   padding-bottom: 15px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.4);
   border-radius: 13.179px;
   font-family: "RocknRoll One";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 24px;
   color: #F8CA00;
   text-shadow: 0px 2.84732px 0px #7A4558;
-  padding: 34px 15px 19px; }
+  padding: 16px;
+  top: 16px; }
   @media (max-width: 768px) {
     .timer__item {
-      min-width: 100px; } }
+      min-width: 68px;
+      font-size: 18px;
+      top: 19px; } }
   .timer__item::before {
     content: attr(data-title);
     display: block;
     position: absolute;
     left: 50%;
-    bottom: 54px;
+    bottom: 66px;
     transform: translateX(-50%);
     font-family: "RocknRoll One";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     text-shadow: 0px 1.12163px 0px #7A4558;
     color: #fff; }
     @media (max-width: 768px) {
       .timer__item::before {
-        font-size: 12px; } }
+        font-size: 9px;
+        bottom: 66px; } }
+
+.timer__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  padding-right: 8px; }
 
 *, *::before, *::after {
   margin: 0;
@@ -396,9 +417,9 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #000; }
 
 body .header {
-  padding-top: 66px;
+  padding-top: 76px;
   background: url("../img/back.png") 100% 100%/cover no-repeat;
-  height: 750px; }
+  height: 630px; }
   @media (max-width: 979px) {
     body .header {
       background: url("../img/back.png") 60% 100%/cover no-repeat;
@@ -406,7 +427,7 @@ body .header {
       padding-top: 46px; } }
   @media (max-width: 768px) {
     body .header {
-      height: 835px;
+      height: 945px;
       background: url("../img/back_mob.png") 100% 100%/cover no-repeat;
       padding-top: 10px; } }
   body .header__menu {
@@ -419,7 +440,15 @@ body .header {
       margin-top: 40px; } }
   @media (max-width: 768px) {
     body .header__logo img {
-      width: 100%; } }
+      width: 140px;
+      height: auto; } }
+  body .header__logo .logo-two {
+    margin-left: 37px; }
+    @media (max-width: 768px) {
+      body .header__logo .logo-two {
+        margin-left: 6px;
+        width: 140px;
+        height: 28px; } }
   body .header__local {
     display: flex;
     align-items: center;
@@ -437,10 +466,10 @@ body .header {
       color: #E0DFDF;
       margin-right: 10px; }
   body .header__info {
-    margin-top: 35px;
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    max-width: 540px; }
+    position: relative; }
     @media (max-width: 979px) {
       body .header__info {
         margin-top: 30px; } }
@@ -549,9 +578,6 @@ body .header {
       border: none;
       background: none;
       box-shadow: none; } }
-@media (max-width: 768px) {
-  body .main {
-    margin-top: 30px; } }
 @media (max-width: 979px) {
   body .main .proposition {
     margin-top: 0; } }
@@ -562,7 +588,7 @@ body .main .proposition__images {
   height: 184px;
   background: url("../img/main-image.png") 100% 0%/cover no-repeat;
   border-radius: 24px;
-  margin-top: 70px; }
+  margin-top: 13px; }
   @media (max-width: 768px) {
     body .main .proposition__images {
       display: flex;
@@ -622,10 +648,14 @@ body .main .proposition__link {
 body .main .proposition__items {
   display: flex;
   align-items: center;
-  margin: 0 45px; }
+  margin: 0 50px; }
+  @media (max-width: 979px) {
+    body .main .proposition__items {
+      margin: 0 15px; } }
   @media (max-width: 768px) {
     body .main .proposition__items {
-      margin: 40px 0px 0px; } }
+      margin: 40px 0px 0px;
+      width: 80%; } }
   body .main .proposition__items h2 {
     font-family: "RocknRoll One";
     font-style: normal;
@@ -633,6 +663,12 @@ body .main .proposition__items {
     font-size: 67px;
     color: #F8CA00;
     text-shadow: 0px 3.3908px 0px #7A4558; }
+    @media (max-width: 979px) {
+      body .main .proposition__items h2 {
+        font-size: 65px; } }
+    @media (max-width: 768px) {
+      body .main .proposition__items h2 {
+        font-size: 58px; } }
   body .main .proposition__items p {
     font-family: "RocknRoll One";
     font-style: normal;
@@ -643,8 +679,33 @@ body .main .proposition__items {
     margin-left: 15px;
     margin-top: 8px;
     text-transform: uppercase; }
+    @media (max-width: 979px) {
+      body .main .proposition__items p {
+        justify-self: 18px; } }
+    @media (max-width: 768px) {
+      body .main .proposition__items p {
+        font-size: 17px; } }
+  body .main .proposition__items a {
+    background: #F8CA00;
+    border-radius: 45.3121px;
+    font-family: "RocknRoll One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #B16000;
+    padding: 17px;
+    text-decoration: none;
+    transition: 0.3s; }
+    @media (max-width: 979px) {
+      body .main .proposition__items a {
+        font-size: 20px; } }
+    body .main .proposition__items a:hover {
+      box-shadow: 0px 0px 65.6651px rgba(250, 154, 1, 0.7); }
 body .main .proposition__services {
-  margin-top: 90px; }
+  margin-top: 63px; }
   @media (max-width: 768px) {
     body .main .proposition__services {
       margin-top: 50px; } }

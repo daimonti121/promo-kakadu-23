@@ -35,7 +35,7 @@ html, .body
 [class*="__container"]
     max-width: 1054px
     margin: 0 auto
-    @include _1170 
+    @include _1170
         margin: 0 40px
 
 body::-webkit-scrollbar
@@ -51,15 +51,15 @@ body::-webkit-scrollbar-thumb
 
 body
     .header
-        padding-top: 66px
+        padding-top: 76px
         background: url('../img/back.png') 100% 100%/cover no-repeat
-        height: 750px
+        height: 630px
         @include _979
             background: url('../img/back.png') 60% 100%/cover no-repeat
             height: 550px
             padding-top: 46px
         @include _768
-            height: 835px
+            height: 945px
             background: url('../img/back_mob.png') 100% 100%/cover no-repeat
             padding-top: 10px
         &__menu
@@ -72,7 +72,14 @@ body
                 margin-top: 40px
             img
                 @include _768
-                    width: 100%
+                    width: 140px
+                    height: auto
+            .logo-two
+                margin-left: 37px
+                @include _768
+                    margin-left: 6px
+                    width: 140px
+                    height: 28px
 
         &__local
             display: flex
@@ -91,10 +98,10 @@ body
                 color: #E0DFDF
                 margin-right: 10px
         &__info
-            margin-top: 35px
+            margin-top: 27px
             display: flex
             flex-direction: column
-            max-width: 540px
+            position: relative
             @include _979
                 margin-top: 30px
             @include _768
@@ -193,8 +200,6 @@ body
                 box-shadow: none
 
     .main
-        @include _768
-                margin-top: 30px
         .proposition
             @include _979
                 margin-top: 0
@@ -205,7 +210,7 @@ body
                 height: 184px
                 background: url('../img/main-image.png') 100% 0%/cover no-repeat
                 border-radius: 24px
-                margin-top: 70px
+                margin-top: 13px
                 @include _768
                     display: flex
                     flex-direction: column
@@ -262,9 +267,12 @@ body
             &__items
                 display: flex
                 align-items: center
-                margin: 0 45px
+                margin: 0 50px
+                @include _979
+                    margin: 0 15px
                 @include _768
                     margin: 40px 0px 0px
+                    width: 80%
                 h2
                     font-family: 'RocknRoll One'
                     font-style: normal
@@ -272,6 +280,10 @@ body
                     font-size: 67px
                     color: #F8CA00
                     text-shadow: 0px 3.3908px 0px #7A4558
+                    @include _979
+                        font-size: 65px
+                    @include _768
+                        font-size: 58px
                 p
                     font-family: 'RocknRoll One'
                     font-style: normal
@@ -282,8 +294,32 @@ body
                     margin-left: 15px
                     margin-top: 8px
                     text-transform: uppercase
+                    @include _979
+                        justify-self: 18px
+                    @include _768
+                        font-size: 17px
+                a
+                    background: #F8CA00
+                    border-radius: 45.3121px
+                    font-family: 'RocknRoll One'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 24px
+                    line-height: 21px
+                    text-align: center
+                    text-transform: uppercase
+                    color: #B16000
+                    padding: 17px
+                    text-decoration: none
+                    transition: 0.3s
+                    @include _979
+                        font-size: 20px
+                    &:hover
+                        box-shadow: 0px 0px 65.6651px rgba(250, 154, 1, 0.7)
+                        
+
             &__services
-                margin-top: 90px
+                margin-top: 63px
                 @include _768
                     margin-top: 50px
             &__services-items
@@ -356,7 +392,7 @@ body
                     @include _768
                         margin-right: 0px
                         display: none
-                .mob 
+                .mob
                     @include _768
                         margin: 30px auto 0px
                         display: block
