@@ -52,8 +52,10 @@ body::-webkit-scrollbar-thumb
 body
     .header
         padding-top: 76px
-        background: url('../img/back.png') 100% 100%/cover no-repeat
+        background: url('../img/back-big.png') 100% 100%/cover no-repeat
         height: 630px
+        @include _1440
+            background: url('../img/back.png') 100% 100%/cover no-repeat
         @include _979
             background: url('../img/back.png') 60% 100%/cover no-repeat
             height: 550px

@@ -418,8 +418,11 @@ body::-webkit-scrollbar-thumb {
 
 body .header {
   padding-top: 76px;
-  background: url("../img/back.png") 100% 100%/cover no-repeat;
+  background: url("../img/back-big.png") 100% 100%/cover no-repeat;
   height: 630px; }
+  @media (max-width: 1440px) {
+    body .header {
+      background: url("../img/back.png") 100% 100%/cover no-repeat; } }
   @media (max-width: 979px) {
     body .header {
       background: url("../img/back.png") 60% 100%/cover no-repeat;
