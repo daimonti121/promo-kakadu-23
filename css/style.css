@@ -342,8 +342,8 @@
   @media (max-width: 768px) {
     .timer__item {
       min-width: 68px;
-      font-size: 18px;
-      top: 19px; } }
+      font-size: 20px;
+      top: 17px; } }
   .timer__item::before {
     content: attr(data-title);
     display: block;
@@ -360,8 +360,8 @@
     color: #fff; }
     @media (max-width: 768px) {
       .timer__item::before {
-        font-size: 9px;
-        bottom: 66px; } }
+        font-size: 10px;
+        bottom: 65px; } }
 
 .timer__image {
   display: flex;
