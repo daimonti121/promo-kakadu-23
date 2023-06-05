@@ -3,8 +3,14 @@ function $_GET(e,t){return!!(t=t.match(new RegExp(e+"=([^&=]+)")))&&t[1]}
     var stag = "?stag=" + getStag;
     console.log("STAG - " + stag);
 
-    $('#stag').click(function(event){
-        event.preventDefault();
-        event.stopImmediatePropagation();
-        window.location.href = 'https://casinokakadu.com/fi' + stag;
-    })
+$('#stag1').click(function(event){
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    window.location.href = 'https://casinokakadu.com/fi' + stag;
+})
+
+$('#stag2').click(function(event){
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    window.location.href = 'https://casinokakadu.com/fi' + stag;
+})
